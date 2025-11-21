@@ -1,6 +1,8 @@
 #include <iostream>
 using namespace std;
 
+void loginPengguna() {
+}
 void menuUtama() {
 }
 int main() {
@@ -18,11 +20,22 @@ int main() {
 
     // cute mascot
     cout << "૮₍ ´ ꒳ `₎ა  ♡  Selamat Datang di Sistem Informasi Perpustakaan\n";
+    cout << "1. login pengguna\n";
+    cout << "2. daftar anggota baru\n";
+    cout << "3. pilih buku favoritmu hari ini! 📚🌸\n\n"; 
 
     int pilihan;
-
-
     do {
+        cout << "pilih opsi di atas untuk melanjutkan: ";
+        cin >> pilihan;
+        cout << "\nlogin pengguna\n";
+        cout << "masukkan username: ";
+        string username;
+        cin >> username;
+        cout << "masukkan password: ";
+        string password;
+        cin >> password;
+        cout << "selamat datang, " << username << "! ૮₍ ´ ꒳ `₎ა\n";
         cout << "\nmenu utama\n";
         cout << "1. cari buku\n";
         cout << "2. pinjam buku\n";
